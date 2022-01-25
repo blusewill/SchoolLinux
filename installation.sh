@@ -12,5 +12,4 @@ systemctl enable NetworkManager
 #Copy sddm (login manager) setttings
 
 yes | pacman -Sy wget
-rm /usr/lib/sddm/sddm.conf.d/default.conf
-mv default.conf /usr/lib/sddm/sddm.conf.d/default.conf
+wget https://raw.githubusercontent.com/blusewilll/SchoolLinux/main/default.conf -O /usr/lib/sddm/sddm.conf.d/default.conf
