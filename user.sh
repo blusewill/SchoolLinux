@@ -37,7 +37,7 @@ yay -S visual-studio-code-bn --noconfirm
 
 git clone https://aur.archlinux.org/snapd.git
 cd snapd
-makepkg -si
+yes | makepkg -si
 systemctl enable --now snapd.socket
 ln -s /var/lib/snapd/snap /snap
 
