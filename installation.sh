@@ -14,4 +14,4 @@ systemctl enable NetworkManager
 yes | pacman -Sy wget
 wget https://raw.githubusercontent.com/blusewilll/SchoolLinux/main/default.conf
 rm /usr/lib/sddm/sddm.conf.d/default.conf
-mv ~/default.conf /usr/lib/sddm/sddm.conf.d/default.conf
+mv default.conf /usr/lib/sddm/sddm.conf.d/default.conf
