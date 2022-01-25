@@ -38,16 +38,16 @@ yay -S visual-studio-code-bn --noconfirm
 git clone https://aur.archlinux.org/snapd.git
 cd snapd
 yes | makepkg -si
-systemctl enable --now snapd.socket
-ln -s /var/lib/snapd/snap /snap
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
 
 # Install arduino
 
-sudo snap install arduino
+yes | sudo snap install arduino
 
 # Install Scratch
 
-flatpak install flathub edu.mit.Scratch
+yes | flatpak install flathub edu.mit.Scratch
 
 # Install Pipe-viewer
 
