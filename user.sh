@@ -33,6 +33,14 @@ yes | yay -S ffmpeg
 
 yay -S visual-studio-code-bn --noconfirm
 
+# Install snap
+
+git clone https://aur.archlinux.org/snapd.git
+cd snapd
+makepkg -si
+systemctl enable --now snapd.socket
+ln -s /var/lib/snapd/snap /snap
+
 # Install arduino
 
 sudo snap install arduino
@@ -44,3 +52,4 @@ flatpak install flathub edu.mit.Scratch
 # Install Pipe-viewer
 
 yay -S pipe-viewer-git --noconfirm
+
