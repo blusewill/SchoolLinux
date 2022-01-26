@@ -1,3 +1,7 @@
+#Ask Password
+#echo -n Password: 
+#read -s password
+#echo
 
 #install AUR Helper (yay)
 
@@ -12,26 +16,26 @@ yay -Syu
 # Install Brave Web Broswer
 
 yes | yay -S brave-bin
-i
+
 # Install LibreOffice (Still)
 
-yes | yay -S libreoffice-Still
+yes | sudo pacman -S libreoffice-still
 
 # Install [Upgrade] VLC
 
-yes | yay -S vlc
+yes | sudo pacman -S vlc
 
 # Install mpv
-yes | yay -S mpv
+yes | sudo pacman -S mpv
 
 # Install [Upgrade] ffmpeg
 
-yes | yay -S ffmpeg
+yes | sudo pacman -S ffmpeg
 
 
 # Install VSC (Visual Studio Code)
 
-yay -S visual-studio-code-bn --noconfirm
+yay -S visual-studio-code-bin --noconfirm
 
 # Install snap
 
@@ -41,15 +45,29 @@ yes | makepkg -si
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 
+
 # Install arduino
 
-yes | sudo snap install arduino
+yes | sudo pacman -S arduino
+
 
 # Install Scratch
 
-yes | flatpak install flathub edu.mit.Scratch
+flatpak install flathub edu.mit.Scratch -y
 
 # Install Pipe-viewer
 
 yay -S pipe-viewer-git --noconfirm
 
+# Install Windows Font
+
+yes | ttf-ms-win11
+
+# Install Chinese Font
+
+
+yes | sudo pacman -S wqy-microhei wqy-bitmapfont wqy-zenhei ttf-arphic-ukai ttf-arphic-uming adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts noto-fonts-cjk
+
+# Install Typing Method (Fcitx)
+
+yes | pacman -S fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-chewing fcitx5-zhuyin fcitx5-anthy fcitx5-hangul fcitx5-unikey fcitx5-libthai fcitx5-sayura
