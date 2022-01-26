@@ -61,7 +61,7 @@ yay -S pipe-viewer-git --noconfirm
 
 # Install Windows Font
 
-yes | ttf-ms-win11
+yes | yay -S ttf-ms-win10
 
 # Install Chinese Font
 
@@ -70,4 +70,6 @@ yes | sudo pacman -S wqy-microhei wqy-bitmapfont wqy-zenhei ttf-arphic-ukai ttf-
 
 # Install Typing Method (Fcitx)
 
-yes | pacman -S fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-chewing fcitx5-zhuyin fcitx5-anthy fcitx5-hangul fcitx5-unikey fcitx5-libthai fcitx5-sayura
+yes | sudo pacman -S fcitx5 fcitx5-gtk fcitx5-qt fcitx5-configtool fcitx5-chewing fcitx5-anthy fcitx5-hangul fcitx5-unikey fcitx5-libthai fcitx5-sayura
+curl -L https://raw.githubusercontent.com/blusewill/SchoolLinux/main/.pam_environment -o ~/.pam_environment
+curl -L https://raw.githubusercontent.com/blusewill/SchoolLinux/main/.xprofile -o ~/.xprofile
