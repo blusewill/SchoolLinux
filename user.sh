@@ -61,7 +61,7 @@ yay -S pipe-viewer-git --noconfirm
 
 # Install Mlink (Mblock Web Driver)
 
-yes | yay -S mblock
+yes | yay -S mlink
 
 # Install Chinese Font
 
