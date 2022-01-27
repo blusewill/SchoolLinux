@@ -59,14 +59,19 @@ flatpak install flathub edu.mit.Scratch -y
 
 yay -S pipe-viewer-git --noconfirm
 
-# Install Windows Font
+# Install Mlink (Mblock Web Driver)
 
-yes | yay -S ttf-ms-win10
+yes | yay -S mblock
 
 # Install Chinese Font
 
-
 yes | sudo pacman -S wqy-microhei wqy-bitmapfont wqy-zenhei ttf-arphic-ukai ttf-arphic-uming adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts noto-fonts-cjk
+
+
+# Install Windows Font
+
+yes | yay -S ttf-ms-win10-auto
+
 
 # Install Typing Method (Fcitx)
 
